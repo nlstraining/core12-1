@@ -1,0 +1,6 @@
+how to write a class
+how to write data members - variables - class state 
+how to encapsulate - how make data members private and provide set / get methods
+how to create object and initialise without set/get and with set/get
+how to create constructors and difference between parameterized and default 
+constructors 

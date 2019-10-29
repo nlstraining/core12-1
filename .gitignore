@@ -1,0 +1,16 @@
+.project
+.metadata
+.gradle
+bin/
+tmp/
+target/
+*.tmp/
+target/
+*.tmp
+*.bak
+*.swp
+local.properties
+.classpath
+.settings/
+.loadpath
+
