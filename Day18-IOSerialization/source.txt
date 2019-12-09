@@ -1,0 +1,94 @@
+OverviewPackageClassUseTreeDeprecatedIndexHelpJava™ Platform
+Standard Ed. 7Prev ClassNext ClassFramesNo FramesAll ClassesSummary: Nested | Field | Constr | MethodDetail: Field | Constr | Method
+java.io
+Class FileWriter
+java.lang.Object
+java.io.Writer
+java.io.OutputStreamWriter
+java.io.FileWriter
+All Implemented Interfaces:
+Closeable, Flushable, Appendable, AutoCloseable
+
+public class FileWriter
+extends OutputStreamWriter
+Convenience class for writing character files. The constructors of this class assume that the default character encoding and the default byte-buffer size are acceptable. To specify these values yourself, construct an OutputStreamWriter on a FileOutputStream.
+Whether or not a file is available or may be created depends upon the underlying platform. Some platforms, in particular, allow a file to be opened for writing by only one FileWriter (or other file-writing object) at a time. In such situations the constructors in this class will fail if the file involved is already open.
+
+FileWriter is meant for writing streams of characters. For writing streams of raw bytes, consider using a FileOutputStream.
+
+Since:
+JDK1.1
+See Also:
+OutputStreamWriter, FileOutputStream
+Field Summary
+Fields inherited from class java.io.Writer
+lock
+Constructor Summary
+Constructors 
+Constructor and Description
+FileWriter(File file)
+Constructs a FileWriter object given a File object.
+FileWriter(File file, boolean append)
+Constructs a FileWriter object given a File object.
+FileWriter(FileDescriptor fd)
+Constructs a FileWriter object associated with a file descriptor.
+FileWriter(String fileName)
+Constructs a FileWriter object given a file name.
+FileWriter(String fileName, boolean append)
+Constructs a FileWriter object given a file name with a boolean indicating whether or not to append the data written.
+Method Summary
+Methods inherited from class java.io.OutputStreamWriter
+close, flush, getEncoding, write, write, write
+Methods inherited from class java.io.Writer
+append, append, append, write, write
+Methods inherited from class java.lang.Object
+clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait
+Constructor Detail
+FileWriter
+public FileWriter(String fileName)
+           throws IOException
+Constructs a FileWriter object given a file name.
+Parameters:
+fileName - String The system-dependent filename.
+Throws:
+IOException - if the named file exists but is a directory rather than a regular file, does not exist but cannot be created, or cannot be opened for any other reason
+FileWriter
+public FileWriter(String fileName,
+          boolean append)
+           throws IOException
+Constructs a FileWriter object given a file name with a boolean indicating whether or not to append the data written.
+Parameters:
+fileName - String The system-dependent filename.
+append - boolean if true, then data will be written to the end of the file rather than the beginning.
+Throws:
+IOException - if the named file exists but is a directory rather than a regular file, does not exist but cannot be created, or cannot be opened for any other reason
+FileWriter
+public FileWriter(File file)
+           throws IOException
+Constructs a FileWriter object given a File object.
+Parameters:
+file - a File object to write to.
+Throws:
+IOException - if the file exists but is a directory rather than a regular file, does not exist but cannot be created, or cannot be opened for any other reason
+FileWriter
+public FileWriter(File file,
+          boolean append)
+           throws IOException
+Constructs a FileWriter object given a File object. If the second argument is true, then bytes will be written to the end of the file rather than the beginning.
+Parameters:
+file - a File object to write to
+append - if true, then bytes will be written to the end of the file rather than the beginning
+Throws:
+IOException - if the file exists but is a directory rather than a regular file, does not exist but cannot be created, or cannot be opened for any other reason
+Since:
+1.4
+FileWriter
+public FileWriter(FileDescriptor fd)
+Constructs a FileWriter object associated with a file descriptor.
+Parameters:
+fd - FileDescriptor object to write to.
+OverviewPackageClassUseTreeDeprecatedIndexHelpJava™ Platform
+Standard Ed. 7Prev ClassNext ClassFramesNo FramesAll ClassesSummary: Nested | Field | Constr | MethodDetail: Field | Constr | Method
+Submit a bug or feature
+For further API reference and developer documentation, see Java SE Documentation. That documentation contains more detailed, developer-targeted descriptions, with conceptual overviews, definitions of terms, workarounds, and working code examples.
+Copyright © 1993, 2018, Oracle and/or its affiliates. All rights reserved. Use is subject to license terms. Also see the documentation redistribution policy. Modify Cookie Preferences. Modify Ad Choices.
