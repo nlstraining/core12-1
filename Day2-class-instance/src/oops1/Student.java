@@ -1,4 +1,7 @@
 package oops1;
+
+import examples.Hello;
+
 // object oriented software we take only relevant object identification properties which
 // we can see and experience 
 public class Student {  // defined a class // 50
@@ -8,4 +11,9 @@ public class Student {  // defined a class // 50
 	    String name;
 	    String gender;
 	    
+	    void m(){
+	    	
+	    	 Hello hello = new Hello();
+	    //	 hello.
+	    }
 }

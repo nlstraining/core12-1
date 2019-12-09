@@ -1,5 +1,7 @@
 
-final public class Dictionary  {
+
+//final
+public class Dictionary  {
 
 }
 
@@ -9,7 +11,8 @@ class OxfordDictionary extends Dictionary{
 
 class A{
 	
-	 final void m(){}
+	 //final 
+	 void m(){}
 } 
 
 class B extends A{
@@ -21,15 +24,17 @@ class Test{
  
 	 public static void main(String[] args) {
 	
-		  final int i;
+		  //final
+		  int i;
 		  i = 20;
 		 i=50;  
-		 final Dictionary d;
+		 //final 
+		 Dictionary d;
 		 d = new Dictionary();
 		 d = d;
 		 
 		final  Dictionary dict = new Dictionary();
-		  dict = new Dictionary();
+	//	  dict = new Dictionary();
 	}
 }
 

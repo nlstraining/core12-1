@@ -1,4 +1,4 @@
-
+// 
 public class Math  { // Math is user defined class  {
 
 	public static void main(String[] args) {

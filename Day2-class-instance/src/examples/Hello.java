@@ -13,7 +13,17 @@ import java.net.*;
 ///
 // class Test2{} note allowed
 import java.util.*;
-class Test{}
+class Test{
+	
+	void m(){
+		  Hello h = new Hello();
+		   h.defaultData = 20;
+		   h.protData = 30;
+		   h.pubData = 40;
+		   
+		   
+	}
+}
 interface Shape{}
 // only one public class/interface/enum per .java file
 public  class Hello{
@@ -28,9 +38,19 @@ public  class Hello{
 	8. enums
 	9. anonymous blocks  - static and non-static or instance blocks
 	*/
+	private int data; // with in same class 
+	 int defaultData; // a default member access, only to sub-classes
+	                           	// same class and only sub classes within the same package
+	protected int protData;
+	public int pubData;
 }
-class Hello2 {
-
+ class Hello2 extends Hello {
+	{
+		//data = 10;
+		defaultData = 10;
+		protData = 30;
+		pubData = 40;
+	} 
 	
 }
 
