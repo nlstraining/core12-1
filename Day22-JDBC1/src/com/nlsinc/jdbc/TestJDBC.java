@@ -18,8 +18,8 @@ public class TestJDBC {
 		// 4. Add the above jar file to Eclipse JDBC project
 		// 5. load the driver class
 		
-		 Class.forName("com.mysql.cj.jdbc.Driver");
-		 System.out.println("Driver class loaded....");
+		 //Class.forName("com.mysql.cj.jdbc.Driver");
+		 //System.out.println("Driver class loaded....");
 		 
 		 // 6. connect to the databse - we need
 		     //a.  URL - protocol, ipaddress, portno and file path 
@@ -30,7 +30,7 @@ public class TestJDBC {
 		     System.out.println("Connected... 2 DB...");
 		//7. Create a statement Object
 		     Statement st = con.createStatement();
-		     String sql = "Select * from CountryLanguage";
+		     String sql = "Select * from CountryLanguage";// static sql statement means no parameters
 	// 8. execute the sql command
 		     ResultSet rs = st.executeQuery(sql);
 		     //9 . get the data from ResultSet - is like a view of the current state of db
